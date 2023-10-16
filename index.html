@@ -1,0 +1,186 @@
+<!-- Marianela Vázquez (325335) y Santiago Larrosa (251816) -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Obligatorio 1</title>
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+
+    <header>
+        <h1>Regalos especiales</h1>
+
+        <h2>
+            Sitio desarrollado por
+            <a target="_blank" href="https://www.linkedin.com/in/marianelavazquez/">Marianela Vázquez
+                (Nro
+                325335)
+            </a>
+            y
+            <a target="_blank" href="https://www.linkedin.com/in/santiago-larrosa-bauz%C3%A1-99b740251/">Santiago
+                Larrosa
+                (Nro
+                251816)
+            </a>
+        </h2>
+
+        <nav>
+            <a href="#">Gestión de experiencias</a>
+            <a href="#">Gestión de categorías</a>
+            <a href="#">Informes</a>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
+
+    <main>
+
+        <!-- Filtrado -->
+
+        <div class="contenedorDual">
+
+            <section class="filtrado">
+                <div>
+                    <h2>Categoría</h2>
+                    <select name="categoria" id="categoria"></select>
+                </div>
+                <div>
+                    <h2>Cantidad de personas</h2>
+                    <select name="cantidadPersonas" id="cantidadPersonas">
+                        <option value="todos" selected>Todos</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="+2">Más de 2 personas</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Orden de precio</h2>
+                    <select name="ordenPrecio" id="ordenPrecio">
+                        <option value="Creciente" selected>Creciente</option>
+                        <option value="Decreciente">Decreciente</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Experiencias y Compra -->
+
+            <section class="experiencia_compra">
+                <div>
+                    <h2>Experiencias</h2>
+                    <p>Sin datos</p>
+                </div>
+
+                <div class="margen_superior">
+                    <h2>¡Comprar!</h2>
+                    <p>Experiencia: sin datos</p>
+                    <form>
+                        <label for="nombreComprador">Nombre Comprador:</label>
+                        <input id="nombreComprador" name="nombreComprador" type="text">
+                        <label for="mail">Mail:</label>
+                        <input id="mail" name="mail" type="email">
+                        <button type="button">Comprar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- Informes -->
+
+        <section class="informes">
+            <h2>Informes</h2>
+
+            <div>
+                <p>Monto de la experiencia/s más cara/s</p>
+                <p>Sin datos</p>
+            </div>
+
+            <div>
+                <p>Experiencia/s más veces comprada</p>
+                <details>
+                    <summary>Detalle de compras de la categoría seleccionada</summary>
+                </details>
+            </div>
+
+            <div>
+                <p>Compras realizadas</p>
+                <ul>
+                    <li>Sin datos</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Gestión de categorías -->
+
+        <section class="gestion_categorias">
+            <h2>Gestión de categorías</h2>
+
+            <form>
+                <label for="nombreCategoria">Nombre de la categoría:</label>
+                <input type="text" id="nombreCategoria" name="nombreCategoria">
+                <label for="detallesCategoria">Detalles de la categoría:</label>
+                <input type="text" id="detallesCategoria" name="detallesCategoria">
+                <button type="button">Agregar</button>
+            </form>
+            <br>
+            <form>
+                <label for="categoriaBorrar">Seleccionar categoría a borrar:</label>
+                <select name="categoriaBorrar" id="categoriaBorrar"></select>
+                <button disabled type="button">Eliminar</button>
+            </form>
+
+        </section>
+
+        <!-- Gestión de experiencias -->
+
+        <section class="gestion_experiencias">
+            <h2>Gestión de experiencias</h2>
+
+            <form>
+                <label for="tituloExperiencia">Título de la experiencia:</label>
+                <input type="text" id="tituloExperiencia" name="tituloExperiencia">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" name="descripcion" id="descripcion">
+                <label for="precio">Precio:</label>
+                <input type="number" name="precio" id="precio">
+                <label for="cantidad">Cantidad:</label>
+                <select name="cantidad" id="cantidad">
+                    <option value="todos">Todos</option>
+                    <option value="1" selected>1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="+2">Más de 2 personas</option>
+                </select>
+                <label for="categoriaExperiencia">Categoría:</label>
+                <select id="categoriaExperiencia" name="categoriaExperiencia"></select>
+                <button disabled type="button">Agregar</button>
+            </form>
+            <br>
+            <form>
+                <label for="experienciaBorrar">Seleccionar experiencia a borrar:</label>
+                <select name="experienciaBorrar" id="experienciaBorrar"></select>
+                <button disabled type="button">Eliminar</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Sitio desarrollado por Marianela Vázquez (325335) y Santiago Larrosa (251816) - Universidad ORT Uruguay</p>
+    </footer>
+
+</body>
+
+</html>

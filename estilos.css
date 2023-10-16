@@ -1,0 +1,75 @@
+/* Marianela Vázquez (325335) y Santiago Larrosa (251816) */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-inline: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #333333;
+    padding: 10px;
+}
+
+nav a {
+    margin: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+/*  */
+
+.contenedorDual {
+    display: flex;
+}
+
+.margen_superior {
+    margin-top: 40px;
+}
+
+/*  */
+
+.filtrado {
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: #ebe9f2;
+    width: 425px;
+}
+
+.experiencia_compra {
+    padding-left: 180px;
+}
+
+.informes {
+    padding: 8px 0;
+    background-color: #c0c0c0;
+}
+
+.gestion_categorias {
+    padding-top: 8px;
+    background-color: #fdda9c;
+}
+
+.gestion_experiencias {
+    padding-top: 8px;
+    background-color: #f29f05;
+}
